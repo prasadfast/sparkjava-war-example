@@ -13,7 +13,7 @@ pipeline {
         }
 	    stage('docker') {
 		    steps { 
-			    sh ' pwd'
+			    sh ' docker build tomcat -t .'
 		    }
 	    }
 	    
