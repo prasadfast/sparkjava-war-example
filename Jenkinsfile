@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'minikube ip'
+			    sh 'minikube start'
 		    }
 	    }    
     }
