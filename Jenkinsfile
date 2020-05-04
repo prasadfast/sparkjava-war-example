@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'minikube start'
+			    sh 'ansible all -m ping '
 		    }
 	    }    
     }
