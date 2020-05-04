@@ -16,6 +16,10 @@ pipeline {
 			    sh ' docker build  -t tomcat.8.0 .'
 		    }
 	    }
-	    
+	 stage('k8s') {
+		    steps { 
+			    sh ' kubectl --version'
+		    }
+	    }    
     }
 }
