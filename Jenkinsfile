@@ -13,7 +13,7 @@ pipeline {
         }
 	    stage('docker') {
 		    steps { 
-			    sh ' sudo docker build -t tomcat:8.0 .'
+			    sh '  docker build -t tomcat:8.0 .'
 		    }
 	    }
 	    
