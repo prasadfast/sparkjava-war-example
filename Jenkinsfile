@@ -18,7 +18,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh ' kubectl get pods'
+			    sh 'sudo  kubectl get pods'
 		    }
 	    }    
     }
