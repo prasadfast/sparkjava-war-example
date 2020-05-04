@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'ansible all -m ping '
+			    sh 'ansible all -m ping -K redhat '
 		    }
 	    }    
     }
