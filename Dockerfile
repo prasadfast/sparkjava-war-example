@@ -1,6 +1,6 @@
 FROM tomcat:8.0-alpine
 
-ADD sample.war /usr/local/tomcat/webapps/
+ADD /var/lib/jenkins/workspace/k8s-integration_master/target/sparkjava-hello-world-1.0.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
