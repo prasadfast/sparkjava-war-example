@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'ansible all -m ping -u ansible --ask-pass=redhat '
+			    sh 'ansible all -m ping -u ansible -p redhat '
 		    }
 	    }    
     }
