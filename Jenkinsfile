@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'kubectl get pods'
+			    sh 'ansible --version'
 		    }
 	    }    
     }
