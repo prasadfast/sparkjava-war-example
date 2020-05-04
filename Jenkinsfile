@@ -11,6 +11,9 @@ pipeline {
                 sh 'mvn clean package ' 
             }
         }
-        
+	    stage('docker') {
+		    steps { 
+			    sh 'docker build -t tomcat:8.0 .'
+	    
     }
 }
