@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'ansible -m ping all'
+			    sh 'kubectl get pods'
 		    }
 	    }    
     }
