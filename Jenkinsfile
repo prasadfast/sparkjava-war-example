@@ -19,7 +19,7 @@ pipeline {
 	    }
 	 stage('k8s') {
 		    steps { 
-			    sh 'ansible --version'
+			    sh 'ansible -m ping all'
 		    }
 	    }    
     }
