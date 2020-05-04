@@ -14,6 +14,8 @@ pipeline {
 	    stage('docker') {
 		    steps { 
 			    sh 'docker build -t tomcat:8.0 .'
+		    }
+	    }
 	    
     }
 }
