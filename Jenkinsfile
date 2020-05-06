@@ -14,6 +14,7 @@ pipeline {
         }
 	    stage('docker') {
 		    steps { 
+			    
 			    sh ' docker build  .'
 		    }
 	    }
