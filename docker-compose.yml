@@ -2,11 +2,11 @@ version: '2'
 
 services:
   tomcat:
-    image: 'bitnami/tomcat:9.0'
+    image: 'tomcat.8.0'
     ports:
-      - '8090:8080'
-    volumes:
-      - 'tomcat_data:/bitnami'
+      - '9999:8080'
+    
+      
 
 volumes:
   tomcat_data:
