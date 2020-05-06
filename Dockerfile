@@ -1,6 +1,6 @@
 FROM tomcat.8.0
 
-ADD ./target/sparkjava-hello-world-1.0.war /usr/local/tomcat/webapps/
+COPY ./target/sparkjava-hello-world-1.0.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
