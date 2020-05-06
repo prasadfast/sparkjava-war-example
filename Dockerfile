@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat.8.0
 
 ADD ./target/sparkjava-hello-world-1.0.war /usr/local/tomcat/webapps/
 
