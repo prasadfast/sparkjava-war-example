@@ -4,7 +4,7 @@ services:
   tomcat:
     image: 'tomcat.8.0'
     ports:
-      - '9999:8080'
+      - '9292:8080'
     
       
 
