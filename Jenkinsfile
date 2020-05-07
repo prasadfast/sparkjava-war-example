@@ -15,6 +15,7 @@ pipeline {
 	    stage('docker') {
 		    steps { 
 			    
+			    sh 'docker rmi -f tomcat_new'
 			    sh ' docker build  -t tomcat_new .'
 		    }
 	    }
