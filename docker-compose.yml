@@ -2,7 +2,7 @@ version: '2'
 
 services:
   tomcat:
-    image: 'tomcat.8.0'
+    image: 'tomcat_new'
     ports:
       - '9292:8080'
     
