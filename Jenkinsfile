@@ -15,7 +15,7 @@ pipeline {
 	    stage('docker') {
 		    steps { 
 			    
-			    sh ' docker build  .'
+			    sh ' docker build  -t tomcat_new .'
 		    }
 	    }
 	 stage('k8s') {
